@@ -29,7 +29,14 @@ setup(
     entry_points={
         'console_scripts': [
             'chair_grasp_moveit = robotarm_executor.chair_grasp_moveit:main',
+            'chair_grasp_moveit_vertical_move = robotarm_executor.chair_grasp_moveit_vertical_move:main',
             'chair_grasp_moveit_debug = robotarm_executor.chair_grasp_moveit_debug:main',
+            'chair_grasp_moveit_dataset = robotarm_executor.chair_grasp_moveit_dataset:main',
+            'chair_grasp_moveit_openvla_dataset = robotarm_executor.chair_grasp_moveit_openvla_dataset:main',
+            'chair_grasp_moveit_diffusion_vla_dataset = robotarm_executor.chair_grasp_moveit_diffusion_vla_dataset:main',
+            'chair_grasp_moveit_openvla_strict_policy = robotarm_executor.chair_grasp_moveit_openvla_strict_policy:main',
+            'chair_grasp_moveit_diffusion_policy = robotarm_executor.chair_grasp_moveit_diffusion_policy:main',
+            'chair_grasp_moveit_diffusion_policy_lda = robotarm_executor.chair_grasp_moveit_diffusion_policy_lda:main',
         ],
     },
 )
